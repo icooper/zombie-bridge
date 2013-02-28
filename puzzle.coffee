@@ -1,7 +1,13 @@
 #!/usr/bin/env coffee
 
+###
+# puzzle.coffee
 #
-# specify whitespace-delimited
+# Ian Cooper
+# 27 February 2013
+#
+# see README.md for usage
+###
 
 # class for escaping person
 class Escapee
