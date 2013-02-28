@@ -1,3 +1,8 @@
+#!/usr/bin/env coffee
+
+#
+# specify whitespace-delimited
+
 # class for escaping person
 class Escapee
 
@@ -74,17 +79,22 @@ all_safe = (escapees) ->
     escapee.safe and previous
   , yes
 
-# open up stdin
+# open up stdin to read strings
 stdin = process.openStdin()
 stdin.setEncoding 'utf8'
 
 # read data from stdin
+data = ''
 stdin.on 'data', (chunk) ->
+  data += chunk
+
+# when we're finished reading
+stdin.on 'end', () ->
 
   # create escapees based on input
   escapees = []
   i = 0
-  for time in chunk.match /\d+/g
+  for time in data.match /\d+/g
     escapees.push new Escapee time, i++
 
   # set initial time and direction
