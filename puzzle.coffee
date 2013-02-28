@@ -6,7 +6,7 @@
 # Ian Cooper
 # 27 February 2013
 #
-# see README.md for usage
+# refer to original email for usage
 ###
 
 # class for escaping person
