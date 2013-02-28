@@ -55,4 +55,4 @@ strategy to get all survivors across the bridge.
 
 ## Solution
 
-See @puzzle.coffee@.
+See `[puzzle.coffee](https://github.com/icooper/zombie-bridge/blob/master/puzzle.coffee)`.
